@@ -1,0 +1,16 @@
+
+yum -y install docker
+
+systemctl start docker
+
+docker pull jenkins:latest
+
+docker images
+
+docker run -it -p 8080:8080 -p 50000:50000 jenkins
+
+tip : jenkins administrator password copy 
+
+jenking connect url => http://ip:8080
+
+
